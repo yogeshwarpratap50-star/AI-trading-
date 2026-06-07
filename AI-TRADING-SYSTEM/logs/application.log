@@ -1,0 +1,50 @@
+2026-06-06 23:13:11,493 | INFO | ai_trading_system.database.schema | Database schema initialized
+2026-06-06 23:13:11,500 | INFO | __main__ | Database initialized
+2026-06-07 09:14:04,452 | INFO | ai_trading_system.database.schema | Database schema initialized
+2026-06-07 09:14:12,136 | INFO | DataQualityValidator | Data validation report generated
+2026-06-07 09:14:12,221 | INFO | RSIIndicator | RSI calculated
+2026-06-07 09:14:12,230 | INFO | MACDIndicator | MACD calculated
+2026-06-07 09:14:12,240 | INFO | MovingAverageIndicator | Moving averages calculated
+2026-06-07 09:14:12,252 | INFO | ATRIndicator | ATR calculated
+2026-06-07 09:14:12,261 | INFO | BollingerBandsIndicator | Bollinger Bands calculated
+2026-06-07 09:14:12,282 | INFO | VWAPIndicator | VWAP, volume ratio, and daily return calculated
+2026-06-07 09:14:12,314 | INFO | FeatureEngineeringService | Feature dataset created
+2026-06-07 09:14:12,342 | INFO | LabelGenerator | Labels generated
+2026-06-07 09:14:12,364 | INFO | DatasetBuilder | Training dataset built
+2026-06-07 09:14:13,233 | INFO | TrainingPipeline | Training pipeline complete
+2026-06-07 09:14:13,233 | INFO | __main__ | Model training complete
+2026-06-07 09:14:46,770 | INFO | ai_trading_system.database.schema | Database schema initialized
+2026-06-07 09:14:54,673 | INFO | DataQualityValidator | Data validation report generated
+2026-06-07 09:14:54,732 | INFO | RSIIndicator | RSI calculated
+2026-06-07 09:14:54,738 | INFO | MACDIndicator | MACD calculated
+2026-06-07 09:14:54,748 | INFO | MovingAverageIndicator | Moving averages calculated
+2026-06-07 09:14:54,754 | INFO | ATRIndicator | ATR calculated
+2026-06-07 09:14:54,762 | INFO | BollingerBandsIndicator | Bollinger Bands calculated
+2026-06-07 09:14:54,799 | INFO | VWAPIndicator | VWAP, volume ratio, and daily return calculated
+2026-06-07 09:14:54,878 | INFO | FeatureEngineeringService | Feature dataset created
+2026-06-07 09:14:54,903 | INFO | LabelGenerator | Labels generated
+2026-06-07 09:14:54,927 | INFO | DatasetBuilder | Training dataset built
+2026-06-07 09:16:50,465 | INFO | ai_trading_system.database.schema | Database schema initialized
+2026-06-07 09:16:55,604 | INFO | DataQualityValidator | Data validation report generated
+2026-06-07 09:16:55,655 | INFO | RSIIndicator | RSI calculated
+2026-06-07 09:16:55,661 | INFO | MACDIndicator | MACD calculated
+2026-06-07 09:16:55,687 | INFO | MovingAverageIndicator | Moving averages calculated
+2026-06-07 09:16:55,711 | INFO | ATRIndicator | ATR calculated
+2026-06-07 09:16:55,725 | INFO | BollingerBandsIndicator | Bollinger Bands calculated
+2026-06-07 09:16:55,737 | INFO | VWAPIndicator | VWAP, volume ratio, and daily return calculated
+2026-06-07 09:16:55,775 | INFO | FeatureEngineeringService | Feature dataset created
+2026-06-07 09:16:55,840 | INFO | LabelGenerator | Labels generated
+2026-06-07 09:16:55,862 | INFO | DatasetBuilder | Training dataset built
+2026-06-07 09:16:57,514 | INFO | TrainingPipeline | Training pipeline complete
+2026-06-07 09:16:57,516 | INFO | __main__ | Model training complete
+2026-06-07 09:17:25,783 | INFO | ai_trading_system.database.schema | Database schema initialized
+2026-06-07 09:17:33,668 | INFO | DataQualityValidator | Data validation report generated
+2026-06-07 09:17:33,715 | INFO | RSIIndicator | RSI calculated
+2026-06-07 09:17:33,722 | INFO | MACDIndicator | MACD calculated
+2026-06-07 09:17:33,734 | INFO | MovingAverageIndicator | Moving averages calculated
+2026-06-07 09:17:33,743 | INFO | ATRIndicator | ATR calculated
+2026-06-07 09:17:33,750 | INFO | BollingerBandsIndicator | Bollinger Bands calculated
+2026-06-07 09:17:33,761 | INFO | VWAPIndicator | VWAP, volume ratio, and daily return calculated
+2026-06-07 09:17:33,799 | INFO | FeatureEngineeringService | Feature dataset created
+2026-06-07 09:17:33,833 | INFO | LabelGenerator | Labels generated
+2026-06-07 09:17:33,860 | INFO | DatasetBuilder | Training dataset built

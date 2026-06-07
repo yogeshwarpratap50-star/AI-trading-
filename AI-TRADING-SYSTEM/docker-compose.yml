@@ -1,0 +1,74 @@
+version: "3.9"
+
+services:
+  # ── Dashboard (Streamlit) ─────────────────────────────────────────────────
+  dashboard:
+    build: .
+    container_name: ai_trading_dashboard
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+      - ./backups:/app/backups
+    environment:
+      - SIMULATION_MODE=true
+      - BROKER_NAME=paper
+      - STARTING_CAPITAL=100000
+      - LOG_LEVEL=INFO
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # ── Trading Engine (headless) ─────────────────────────────────────────────
+  engine:
+    build: .
+    container_name: ai_trading_engine
+    restart: unless-stopped
+    command: python main.py --paper-trade --symbol RELIANCE.NS
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+    environment:
+      - SIMULATION_MODE=true
+      - BROKER_NAME=paper
+    env_file:
+      - .env
+    depends_on:
+      dashboard:
+        condition: service_healthy
+
+  # ── Data Collector (runs every 5 min via watch loop) ─────────────────────
+  collector:
+    build: .
+    container_name: ai_trading_collector
+    restart: unless-stopped
+    command: >
+      sh -c "while true; do
+               python main.py --collect-live;
+               sleep 300;
+             done"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      - SIMULATION_MODE=true
+    env_file:
+      - .env
+
+volumes:
+  data:
+  models:
+  reports:
+  logs:
+  backups:

@@ -1,0 +1,8 @@
+app_name: AI-TRADING-SYSTEM
+environment: local
+log_level: INFO
+database_url: sqlite:///database/trading.db
+default_history_years: 1
+request_timeout_seconds: 30
+retry_attempts: 3
+retry_wait_seconds: 2

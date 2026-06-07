@@ -1,0 +1,2 @@
+action,confidence,predicted_class,model_name
+BUY,98.06,1,random_forest
